@@ -1,1 +1,39 @@
+!DOCTYPE html>
 
+<html lang="ja">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>謎解き</title>
+
+</head>
+
+<body>
+
+  <h1>謎解き</h1>
+
+  <p>フィボナッチ数列の次の数字を答えよ。</p>
+
+  <p>1、1、2、3、5、8、13、21、34、？</p>
+
+  <input type="text" id="answer" placeholder="答えを入力">
+
+  <button onclick="checkAnswer()">回答</button>
+
+  <p id="result"></p>
+
+  <script>
+
+    function checkAnswer() {
+
+      const answer = document.getElementById("answer").value;
+
+      if (answer === "55") {
+
+        document.getElementById("result").textContent = "正解！";
+
+      } else {
+
+        document.getElementById("result
